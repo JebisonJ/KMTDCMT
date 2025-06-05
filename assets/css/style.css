@@ -1,0 +1,178 @@
+Custom CSS body {
+    font-family: 'Nunito', 'Roboto', Arial, sans-serif;
+    background: #f8fafc;
+    color: #222;
+}
+
+.navbar-brand img {
+    height: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.logo-img {
+    transition: transform 0.3s cubic-bezier(.4, 2, .6, 1), box-shadow 0.3s;
+}
+
+.logo-img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar-brand,
+.section-title {
+    font-family: 'Nunito', Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.navbar {
+    background: #2d5c3b;
+}
+
+.navbar-brand img {
+    border-radius: 50%;
+    background: #fff;
+}
+
+.navbar {
+    font-family: 'Nunito', sans-serif;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: #222d3a !important;
+    font-weight: 600;
+    position: relative;
+    transition: color 0.2s;
+    font-family: 'Nunito', Arial, sans-serif;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+    color: #09cc7f !important;
+}
+
+.navbar-nav .nav-link.active::after,
+.navbar-nav .nav-link:hover::after {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 3px;
+    background: #09cc7f;
+    border-radius: 2px;
+    margin: 4px auto 0 auto;
+    transition: width 0.2s;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: transparent;
+    margin: 4px auto 0 auto;
+    transition: width 0.2s, background 0.2s;
+}
+
+.btn-donate {
+    background: #09cc7f;
+    color: #fff !important;
+    font-weight: 700;
+    border: none;
+    border-radius: 30px;
+    padding: 8px 24px;
+    transition: background 0.3s;
+    font-family: 'Nunito', Arial, sans-serif;
+}
+
+.btn-donate:hover {
+    background: #fff;
+    color: #2d5c3b;
+    border: 1px solid #09cc7f;
+}
+
+.hero-section {
+    color: #fff;
+    padding: 100px 0 80px 0;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.3rem;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 400;
+}
+
+.section-title {
+    color: #2d5c3b;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.icon-box {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(45, 92, 59, 0.07);
+    padding: 30px 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    transition: box-shadow 0.2s;
+    font-family: 'Roboto', Arial, sans-serif;
+    /* Make logo background transparent and increase logo size */
+}
+
+.navbar-brand img {
+    height: 60px;
+    width: auto;
+    background: transparent;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.icon-box:hover {
+    box-shadow: 0 4px 24px rgba(45, 92, 59, 0.15);
+}
+
+.icon-box i {
+    font-size: 2.5rem;
+    color: #09cc7f;
+    margin-bottom: 15px;
+}
+
+.footer {
+    background: #2d5c3b;
+    color: #fff;
+    padding: 30px 0 10px 0;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+.footer a {
+    color: #09cc7f;
+    text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+    .hero-section {
+        padding: 60px 0 40px 0;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+}
