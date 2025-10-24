@@ -23,6 +23,17 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
 
+    <!-- Add these in the head section -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/wow.js@1.1.2/dist/wow.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.counterup@2.1.0/jquery.counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 </head>
 
 <body>
@@ -252,32 +263,39 @@
     <section class="volunteerSec" style="background-color: #fff6da;padding: 20px 0; text-align: center;width: 100%;">
         <div class="container" style="width:100%;max-width:100%;">
             <div class="scrolling-text-wrapper" style="white-space:nowrap; padding: 0; width:100%;"></div>
-                <div class="scrolling-text"
-                    style="white-space:nowrap;animation: scroll-left 20s linear infinite; width:fit-content;display:inline-block;">
-                    <span class="scrolling-volunteer">
-                        Volunteer <img src="assets/img/animation_arrow.png" alt="Up Arrow" class="scroll-arrow"> &nbsp;
-                        Volunteer <img src="assets/img/animation_arrow.png" alt="Up Arrow" class="scroll-arrow"> &nbsp;
-                        Volunteer <img src="assets/img/animation_arrow.png" alt="Up Arrow" class="scroll-arrow"> &nbsp;
-                        Volunteer <img src="assets/img/animation_arrow.png" alt="Up Arrow" class="scroll-arrow"> &nbsp;
-                        Volunteer <img src="assets/img/animation_arrow.png" alt="Up Arrow" class="scroll-arrow"> &nbsp;
-                        Volunteer <img src="assets/img/animation_arrow.png" alt="Up Arrow" class="scroll-arrow"> &nbsp;
-                        Volunteer <img src="assets/img/animation_arrow.png" alt="Up Arrow" class="scroll-arrow"> &nbsp;
-                        Volunteer <img src="assets/img/animation_arrow.png" alt="Up Arrow" class="scroll-arrow"> &nbsp;
-                        Volunteer <img src="assets/img/animation_arrow.png" alt="Up Arrow" class="scroll-arrow"> &nbsp;
-                        Volunteer <img src="assets/img/animation_arrow.png" alt="Up Arrow" class="scroll-arrow">
-                    </span>
-                </div>
+            <div class="scrolling-text"
+                style="white-space:nowrap;animation: scroll-left 20s linear infinite; width:fit-content;display:inline-block;">
+                <span class="scrolling-volunteer">
+                    Volunteer <img src="assets/img/animation_arrow.png" alt="Up Arrow" class="scroll-arrow"> &nbsp;
+                    Volunteer <img src="assets/img/animation_arrow.png" alt="Up Arrow" class="scroll-arrow"> &nbsp;
+                    Volunteer <img src="assets/img/animation_arrow.png" alt="Up Arrow" class="scroll-arrow"> &nbsp;
+                    Volunteer <img src="assets/img/animation_arrow.png" alt="Up Arrow" class="scroll-arrow"> &nbsp;
+                    Volunteer <img src="assets/img/animation_arrow.png" alt="Up Arrow" class="scroll-arrow"> &nbsp;
+                    Volunteer <img src="assets/img/animation_arrow.png" alt="Up Arrow" class="scroll-arrow"> &nbsp;
+                    Volunteer <img src="assets/img/animation_arrow.png" alt="Up Arrow" class="scroll-arrow"> &nbsp;
+                    Volunteer <img src="assets/img/animation_arrow.png" alt="Up Arrow" class="scroll-arrow"> &nbsp;
+                    Volunteer <img src="assets/img/animation_arrow.png" alt="Up Arrow" class="scroll-arrow"> &nbsp;
+                    Volunteer <img src="assets/img/animation_arrow.png" alt="Up Arrow" class="scroll-arrow">
+                </span>
             </div>
+        </div>
         </div>
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-            html, body {
+
+            html,
+            body {
                 overflow-x: hidden !important;
             }
-            .volunteerSec, .volunteerSec .container, .scrolling-text-wrapper, .scrolling-text {
+
+            .volunteerSec,
+            .volunteerSec .container,
+            .scrolling-text-wrapper,
+            .scrolling-text {
                 width: 100% !important;
                 max-width: 100% !important;
             }
+
             .scrolling-text-wrapper {
                 margin: 0 auto;
                 padding: 0;
@@ -286,12 +304,17 @@
                 /* Hide scrollbars for all browsers */
                 overflow-x: hidden !important;
                 overflow-y: hidden !important;
-                scrollbar-width: none; /* Firefox */
-                -ms-overflow-style: none;  /* IE and Edge */
+                scrollbar-width: none;
+                /* Firefox */
+                -ms-overflow-style: none;
+                /* IE and Edge */
             }
+
             .scrolling-text-wrapper::-webkit-scrollbar {
-                display: none; /* Chrome, Safari, Opera */
+                display: none;
+                /* Chrome, Safari, Opera */
             }
+
             .scrolling-text {
                 font-family: 'Bebas Neue', cursive, sans-serif;
                 font-weight: 700;
@@ -308,36 +331,44 @@
                 width: fit-content !important;
                 min-width: 100%;
             }
+
             .scrolling-volunteer {
                 display: inline-block;
                 vertical-align: top;
             }
+
             .scroll-arrow {
                 height: 3.5rem;
                 vertical-align: top;
             }
+
             @keyframes scroll-left {
                 0% {
                     transform: translateX(100%);
                 }
+
                 100% {
                     transform: translateX(-100%);
                 }
             }
+
             @media (max-width: 992px) {
                 .scrolling-text {
                     font-size: 2.5rem;
                     padding: 0 0.5rem;
                 }
+
                 .scroll-arrow {
                     height: 2rem;
                 }
             }
+
             @media (max-width: 576px) {
                 .scrolling-text {
                     font-size: 1.5rem;
                     padding: 0 0.2rem;
                 }
+
                 .scroll-arrow {
                     height: 1.2rem;
                 }
@@ -348,56 +379,127 @@
     <!-- Get Involved -->
     <section class="py-5 bg-light" id="getinvolved" style="max-width:100%;">
         <div class="container">
-            <h2 class="section-title">Fequently Ask Questions</h2>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="row align-items-center">
+                <!-- Left side - Questions -->
+                <div class="col-lg-7">
                     <div class="mb-4">
                         <div class="accordion mb-4 w-100" id="qaAccordion" style="max-width:100%;">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="q1Heading">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#q1" aria-expanded="true" aria-controls="q1">
+                                    <button class="accordion-button fw-bold text-success" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#q1" aria-expanded="true"
+                                        aria-controls="q1" onclick="toggleAccordion(this)">
                                         How does our Charity work?
                                     </button>
                                 </h2>
-                                <div id="q1" class="accordion-collapse collapse show" aria-labelledby="q1Heading" data-bs-parent="#qaAccordion">
-                                    <div class="accordion-body">
-                                        Our volunteers identify people in need or sustainable projects. Applications are submitted and assessed by board members, including personal visits. If valid, a project is formed and implemented by a team of volunteers.
+                                <div id="q1" class="accordion-collapse collapse show" aria-labelledby="q1Heading"
+                                    data-bs-parent="#qaAccordion">
+                                    <div class="accordion-body text-muted">
+                                        Our volunteers identify people in need or sustainable projects. Applications are
+                                        submitted and assessed by board members, including personal visits. If valid, a
+                                        project is formed and implemented by a team of volunteers.
                                     </div>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="q2Heading">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q2" aria-expanded="false" aria-controls="q2">
+                                    <button class="accordion-button fw-bold text-success collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#q2" aria-expanded="false"
+                                        aria-controls="q2">
                                         Are volunteers or members paid?
                                     </button>
                                 </h2>
-                                <div id="q2" class="accordion-collapse collapse show" aria-labelledby="q2Heading" data-bs-parent="#qaAccordion">
-                                    <div class="accordion-body">
-                                        No, the charity does not pay any compensation to members or co-workers. All gifts and donations are used solely for supporting those in need.
+                                <div id="q2" class="accordion-collapse collapse" aria-labelledby="q2Heading"
+                                    data-bs-parent="#qaAccordion">
+                                    <div class="accordion-body text-muted">
+                                        No, the charity does not pay any compensation to members or co-workers. All
+                                        gifts and donations are used solely for supporting those in need.
                                     </div>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="q3Heading">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q3" aria-expanded="false" aria-controls="q3">
+                                    <button class="accordion-button fw-bold text-success collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#q3" aria-expanded="false"
+                                        aria-controls="q3">
                                         How is project progress monitored?
                                     </button>
                                 </h2>
-                                <div id="q3" class="accordion-collapse collapse show" aria-labelledby="q3Heading" data-bs-parent="#qaAccordion">
-                                    <div class="accordion-body">
-                                        We work closely with volunteers to monitor progress and ensure that common objectives are achieved.
+                                <div id="q3" class="accordion-collapse collapse" aria-labelledby="q3Heading"
+                                    data-bs-parent="#qaAccordion">
+                                    <div class="accordion-body text-muted">
+                                        We work closely with volunteers to monitor progress and ensure that common
+                                        objectives are achieved.
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                <!-- Right side - Image -->
+                <div class="col-lg-5">
+                    <img src="assets/img/loren-joseph-XoBWUBA3Amg-unsplash-1.png" alt="FAQ Illustration"
+                        class="img-fluid rounded shadow-sm">
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="mb-4">
+
+                    </div>
                     </p>
                     <div class="text-center mt-4">
-                        <button type="submit"
-                                    class="btn btn-success rounded-pill px-4 py-2 fw-bold">Message Us on WhatsApp</button>
+                        <button type="submit" class="btn btn-success rounded-pill px-4 py-2 fw-bold">Message Us on
+                            WhatsApp</button>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Our Team-->
+    <section class="py-5" id="gallery">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Our Team</h2>
+            <div class="row g-4">
+                <div class="col-md-3 col-6">
+                    <div class="gallery-item">
+                        <img src="assets/img/case1.png" alt="Gallery Image 1" class="img-fluid rounded shadow-sm">
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="gallery-item">
+                        <img src="assets/img/case2.png" alt="Gallery Image 2" class="img-fluid rounded shadow-sm">
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="gallery-item">
+                        <img src="assets/img/case3.png" alt="Gallery Image 3" class="img-fluid rounded shadow-sm">
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="gallery-item">
+                        <img src="assets/img/g3.jpg" alt="Gallery Image 4" class="img-fluid rounded shadow-sm">
+                    </div>
+                </div>
+            </div>
+            <style>
+                .gallery-item {
+                    transition: transform 0.3s;
+                    cursor: pointer;
+                }
+
+                .gallery-item:hover {
+                    transform: scale(1.05);
+                }
+
+                .gallery-item img {
+                    width: 100%;
+                    height: 200px;
+                    object-fit: cover;
+                }
+            </style>
         </div>
     </section>
 
@@ -539,13 +641,16 @@
                 <div class="col-lg-2 col-md-6">
                     <h6 class="text-uppercase fw-bold mb-3">Sitemap</h6>
                     <ul class="list-unstyled footer-sitemap">
-                        <li class="mb-2"><a href="index.html" class="text-light text-decoration-none footer-link">Home</a>
+                        <li class="mb-2"><a href="index.html"
+                                class="text-light text-decoration-none footer-link">Home</a>
                         </li>
                         <li class="mb-2"><a href="about.html" class="text-light text-decoration-none footer-link">About
                                 Us</a></li>
                         <li class="mb-2"><a href="#whatwedo" class="text-light text-decoration-none footer-link">What We
                                 Do</a></li>
-                        <li class="mb-2"><a href="volunteer.html" class="text-light text-decoration-none footer-link">Become a Volunteer</a></li>
+                        <li class="mb-2"><a href="volunteer.html"
+                                class="text-light text-decoration-none footer-link">Become a
+                                Volunteer</a></li>
                         <li class="mb-2"><a href="#getinvolved" class="text-light text-decoration-none footer-link">Get
                                 Involved</a></li>
                         <li><a href="contact.html" class="text-light text-decoration-none footer-link">Contact</a></li>
@@ -680,6 +785,9 @@
             $(this).trigger('reset');
         });
     </script>
+    <!-- ...existing code... -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 </body>
 
 </html>
